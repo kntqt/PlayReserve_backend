@@ -1,0 +1,80 @@
+# ==============================
+# PlayReserve — .gitignore
+# ==============================
+
+# --- Dependencies ---
+node_modules/
+client/node_modules/
+server/node_modules/
+.pnp
+.pnp.js
+
+# --- Environment variables / secrets ---
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+client/.env*
+server/.env*
+
+# --- Build output ---
+dist/
+dist-ssr/
+build/
+client/dist/
+server/dist/
+*.local
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Runtime / cache ---
+.cache/
+.vite/
+.turbo/
+.eslintcache
+.stylelintcache
+
+# --- Uploads (user/court/profile images uploaded at runtime) ---
+server/uploads/
+client/public/uploads/
+uploads/
+
+# --- Database ---
+*.sql.bak
+*.sqlite
+*.sqlite3
+db_backup/
+*.dump
+
+# --- SQLyog / MySQL local artifacts ---
+*.mwb
+*.frm
+*.ibd
+
+# --- Editor / OS ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Testing ---
+coverage/
+.nyc_output/
+
+# --- Misc ---
+*.tsbuildinfo
+.parcel-cache/
